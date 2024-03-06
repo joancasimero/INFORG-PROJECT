@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.receipt">
+   <children>
+      <ImageView fitHeight="434.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/receipt.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="fromlabel2" layoutX="74.0" layoutY="175.0" text="Legarda" textFill="#036c11">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="tolabel2" layoutX="459.0" layoutY="175.0" text="Gilmore" textFill="#036c11">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="departurelabel2" layoutX="74.0" layoutY="226.0" text="08:00AM" textFill="#036c11">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="seatlabel2" layoutX="461.0" layoutY="226.0" text="Seat 26" textFill="#036c11">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="backtohomepagebutton" layoutX="224.0" layoutY="360.0" mnemonicParsing="false" onAction="#backtohomepage" opacity="0.0" prefHeight="34.0" prefWidth="154.0" />
+      <Button fx:id="cancel" cancelButton="true" layoutX="437.0" layoutY="27.0" mnemonicParsing="false" onAction="#tocancelbutton" prefHeight="18.0" prefWidth="71.0" style="-fx-background-color: white;" text="Cancel" textAlignment="CENTER" textFill="#036c11">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Pane layoutX="323.0" layoutY="70.0" prefHeight="47.0" prefWidth="200.0" style="-fx-background-color: #EFF0F2;">
+         <children>
+            <Label fx:id="datelabel2" layoutX="100.0" layoutY="11.0" text="2023-10-01" textFill="#036c11">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
